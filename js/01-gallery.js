@@ -31,18 +31,10 @@ function onImgClick(e) {
    
     e.preventDefault();
 
-    const onCloseModal = (e) => {
-        const ESC_KEY = "Escape";
-        if(e.code === ESC_KEY){
-            instance.close();
-        }
-    }
-
     const instance = basicLightbox.create(
-        `<img src="${e.target.dataset.source}" width="800" height="600">`,
+    `<img src="${e.target.dataset.source}" width="800" height="600">`,
     )
     instance.show(); 
-
 }; 
 
 
